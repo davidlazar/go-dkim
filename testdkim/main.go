@@ -4,12 +4,10 @@ import (
 	"fmt"
 	"github.com/davidlazar/go-dkim/dkim"
 	"io/ioutil"
-	"log"
 	"os"
 )
 
 func main() {
-	log.SetFlags(log.Lshortfile)
 	if len(os.Args) < 2 {
 		fmt.Printf("usage: %s <email_file>...\n", os.Args[0])
 		return
